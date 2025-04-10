@@ -1,0 +1,19 @@
+.mail-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .expanded-mail {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+  
+  .special-mail {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px;
+  }
+  

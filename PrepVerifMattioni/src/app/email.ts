@@ -3,7 +3,6 @@ export class Email {
       public subject: string,
       public body: string,
       public to: string,
-      public from: string
     ) {}
   }
   

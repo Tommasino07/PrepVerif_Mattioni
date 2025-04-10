@@ -1,0 +1,21 @@
+<div class="container">
+    <form class="jumbotron">
+        <h3 class="display-4">Add a email</h3>
+        <div class="form-group">
+          <label for="title">Email</label>
+          <input name="title" #email class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="link">Oggetto</label>
+          <input name="link" #oggetto class="form-control">
+        </div>
+      <button (click)="addEmail(email, oggetto)">
+        Submit link
+      </button>
+    </form>
+  </div>
+
+  @for(email of emailvett; track email)
+  {
+     <app-sent-mail [email]="email"></app-sent-mail>
+  }
