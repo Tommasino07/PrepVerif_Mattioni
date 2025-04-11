@@ -12,9 +12,9 @@ import { SentMailComponent } from './sent-mail/sent-mail.component';
 export class AppComponent {
   title = 'PrepVerifMattioni';
   emailvett: Email[]=[];
-  addEmail(email :HTMLInputElement, oggetto :HTMLInputElement) : boolean
+  addEmail(email :HTMLInputElement, oggetto :HTMLInputElement, testo : HTMLInputElement) : boolean
   {
-    let nuova_email = new Email(oggetto.value,"", email.value);
+    let nuova_email = new Email(oggetto.value,testo.value, email.value);
     this.emailvett.push(nuova_email);
     console.log(email.value)
     return false;

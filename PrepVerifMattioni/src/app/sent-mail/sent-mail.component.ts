@@ -8,16 +8,13 @@ import { Email } from '../email' ; // Assumiamo che tu abbia creato una classe E
 })
 export class SentMailComponent {
   @Input() email!: Email;
-  expandedIndex: number | null = null;
-  specialIndex: number | null = null;
-
-  // Funzione per espandere/chiudere la mail
-  toggleExpand(index: number): void {
-    this.expandedIndex = this.expandedIndex === index ? null : index;
-  }
-
-  // Funzione per cambiare lo stile della mail speciale
-  toggleSpecial(index: number): void {
-    this.specialIndex = this.specialIndex === index ? null : index;
+  visible=false;
+  esapndi():boolean{
+    this.visible = !this.visible
+    return false
   }
 }
+  
+  
+
+

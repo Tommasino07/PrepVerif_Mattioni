@@ -1,6 +1,6 @@
 export class Email {
     constructor(
-      public subject: string,
+      public object: string,
       public body: string,
       public to: string,
     ) {}

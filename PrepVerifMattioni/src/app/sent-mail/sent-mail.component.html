@@ -1,2 +1,17 @@
+<br>E-mail ricevuta da:
 <p>{{ email.to}}</p>
-<h5>{{ email.subject }}</h5>
+
+@if(visible == true){
+    <h5>{{ email.object }}</h5>
+    <h5>{{ email.body }}</h5>
+}
+
+
+
+<button (click)="esapndi()">
+    espandi
+</button>
+
+<button (click)="esapndi()">
+    chiudi
+</button>
